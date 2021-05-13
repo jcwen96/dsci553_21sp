@@ -1,0 +1,88 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+      
+        {
+            "name": "Python: 当前文件",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+          "name": "Python: task1_ground_truth",
+          "type": "python",
+          "request": "launch",
+          "program": "${workspaceFolder}/task1_ground_truth.py",
+          "args": ["data/train_review.json", "out/task1_ground_truth.out"],
+          "console": "integratedTerminal"
+        },
+        {
+          "name": "Python: task1",
+          "type": "python",
+          "request": "launch",
+          "program": "${workspaceFolder}/task1.py",
+          "args": ["data/train_review.json", "out/task1.res"],
+          "console": "integratedTerminal"
+        },
+        {
+          "name": "Python: task2train",
+          "type": "python",
+          "request": "launch",
+          "program": "${workspaceFolder}/task2train.py",
+          "args": ["data/train_review.json", "out/task2.model", "data/stopwords"],
+          "console": "integratedTerminal"
+        },
+        {
+          "name": "Python: task2predict",
+          "type": "python",
+          "request": "launch",
+          "program": "${workspaceFolder}/task2predict.py",
+          "args": ["data/test_review.json", "out/task2.model", "out/task2.predict"],
+          "console": "integratedTerminal"
+        },
+        {
+          "name": "Python: task3train_item",
+          "type": "python",
+          "request": "launch",
+          "program": "${workspaceFolder}/task3train.py",
+          "args": ["data/train_review.json", "out/task3item.model", "item_based"],
+          "console": "integratedTerminal"
+        },
+        {
+          "name": "Python: task3predict_item",
+          "type": "python",
+          "request": "launch",
+          "program": "${workspaceFolder}/task3predict.py",
+          "args": ["data/train_review.json", "data/test_review.json", "out/task3item.model", "out/task3item.predict", "item_based"],
+          "console": "integratedTerminal"
+        },
+        {
+          "name": "Python: task3train_user",
+          "type": "python",
+          "request": "launch",
+          "program": "${workspaceFolder}/task3train.py",
+          "args": ["data/train_review.json", "out/task3user.model", "user_based"],
+          "console": "integratedTerminal"
+        },
+        {
+          "name": "Python: task3train_user_mini",
+          "type": "python",
+          "request": "launch",
+          "program": "${workspaceFolder}/task3train.py",
+          "args": ["data/mini.input", "out/task3user.mini.model", "user_based"],
+          "console": "integratedTerminal"
+        },
+        {
+          "name": "Python: task3predict_user",
+          "type": "python",
+          "request": "launch",
+          "program": "${workspaceFolder}/task3predict.py",
+          "args": ["data/train_review.json", "data/test_review.json", "out/task3user.model", "out/task3user.predict", "user_based"],
+          "console": "integratedTerminal"
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+  // 使用 IntelliSense 了解相关属性。
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: task3_default",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/task3.py",
+      "args": [
+        "data/review.json",
+        "out/task3_default.out",
+        "default",
+        "20",
+        "50"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: task3_customized",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/task3.py",
+      "args": [
+        "data/review.json",
+        "out/task3_customized.out",
+        "customized",
+        "20",
+        "50"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: task2_no_spark",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/task2.py",
+      "args": [
+        "data/review.json",
+        "data/business.json",
+        "out/task2_no_spark.out",
+        "no_spark",
+        "100"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: task2_spark",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/task2.py",
+      "args": [
+        "data/review.json",
+        "data/business.json",
+        "out/task2_spark.out",
+        "spark",
+        "100"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: task1",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/task1.py",
+      "args": [
+        "data/review.json",
+        "out/task1.out",
+        "data/stopwords",
+        "2018",
+        "100",
+        "100"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}
